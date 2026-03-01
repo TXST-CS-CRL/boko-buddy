@@ -1,5 +1,5 @@
 
-### TXST AI Tutor - Setup Guide (macOS)
+## Boko Buddy - TXST AI Tutor Setup Guide (macOS only)
 
 This guide will help you set up your personal AI tutor. We will use **LlamaIndex** to process your
 course materials and **Streamlit** to provide a chat interface.
@@ -7,13 +7,13 @@ course materials and **Streamlit** to provide a chat interface.
 
 ---
 
-### Phase 1: Preparation
+## Phase 1: Preparation
 
 Before we begin, ensure you have your course materials (PDFs, PPTXs) downloaded from Canvas into a
 single folder (e.g., `~/Desktop/Course_Material`).
 
 
-#### 1. Install System Tools
+### 1. Install System Tools
 
 Open **Terminal** (Cmd + Space, type "Terminal") and paste these commands one by one. You can skip
 this step if you already have `git` and `git-lfs` installed on your system. 
@@ -31,17 +31,17 @@ brew install git git-lfs
 
 ```
 
-#### 2. Get the Code (Clone Repo)
+### 2. Get the Code (Clone Repo)
 
 Now, download the project files to your computer:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://github.com/TXST-CS-CRL/boko-buddy
 cd YOUR_REPO_NAME
 
 ```
 
-#### 3. Initialize Git-LFS (Optional but Recommended)
+### 3. Initialize Git-LFS (Optional but Recommended)
 
 If you plan to sync large vector databases later:
 
@@ -50,7 +50,7 @@ git lfs install
 
 ```
 
-#### Automated Setup of Python Environment and AI Libraries
+### Automated Setup of Python Environment and AI Libraries
 
 To save time, you can skip steps 4 and 5 and run the automated `setup.sh` script that handles the
 Python environment and libraries. 
@@ -60,7 +60,7 @@ bash setup.sh
 
 ```
 
-#### 4. Set Up Python Environment
+### 4. Set Up Python Environment
 
 We recommend using a virtual environment to keep your machine clean:
 
@@ -74,7 +74,7 @@ pip install --upgrade pip
 
 ```
 
-#### 5. Install AI Libraries
+### 5. Install AI Libraries
 
 Paste this block to install the "brain" and the "interface":
 
@@ -86,9 +86,9 @@ pip install llama-index llama-index-core llama-index-llms-openai \
 ```
 
 
-### Phase 2: Configuration & Data
+## Phase 2: Configuration & Data
 
-#### 5. Connect OpenAI
+### 5. Connect OpenAI
 
 You must provide your own API key.
 
@@ -113,7 +113,7 @@ python3 ingest.py [PATH_TO_YOUR_FILES]
 
 ---
 
-### Phase 3: Launch
+## Phase 3: Launch
 
 Run the following command to start the tutor:
 
