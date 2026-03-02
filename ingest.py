@@ -1,7 +1,11 @@
 import os
+import sys
+from pathlib import Path
+
 import pandas as pd
+
 from llama_index.core import Document, VectorStoreIndex, SimpleDirectoryReader
-from llama_index.readers.file import PptxReader, PDFReader, MarkdownReader # Added PptxReader
+from llama_index.readers.file import PptxReader, PDFReader, MarkdownReader 
 from llama_index.core.node_parser import TokenTextSplitter, SentenceSplitter
 
 from llama_index.core import Settings
@@ -92,7 +96,7 @@ def material_handler(data_dir, calendar_map, material_type):
                 doc.metadata["source_file"] = filename 
                 doc.metadata["page_label"] = doc.metadata.get("page_label", "N/A")
                 doc.metadata.update(extra_info)
-                print(f"DEBUG TEXT LENGTH: {len(doc.text)} characters")
+                print(f"TEXT LENGTH: {len(doc.text) / 4} tokens")
                 
                 doc.excluded_llm_metadata_keys = [] # Let the LLM see everything else (date, topic)
                 doc.excluded_embed_metadata_keys = ["file_name", "source_file"] # Don't waste vector space on filename
@@ -145,5 +149,14 @@ def build_course_index(data_dir="./materials", calendar_file="master_calendar.cs
 
 
 
-build_course_index()
+if len(sys.argv) < 2:
+    print(f"No path to course materials provided")
+    print(f"Usage: ")
+    print(f"\t python ingest.py [course_material_folder]\n")
+else: 
+    path = Path(sys.argv[1])
+    if path.exists() and path.is_dir():
+        build_course_index(path)
+    else:
+        print(f"Course material folder not found. Please try again")
 
