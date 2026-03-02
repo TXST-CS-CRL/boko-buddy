@@ -96,7 +96,7 @@ def material_handler(data_dir, calendar_map, material_type):
                 doc.metadata["source_file"] = filename 
                 doc.metadata["page_label"] = doc.metadata.get("page_label", "N/A")
                 doc.metadata.update(extra_info)
-                print(f"TEXT LENGTH: {len(doc.text) / 4} tokens")
+                print(f"TEXT LENGTH: { (int) (len(doc.text) / 4) } tokens")
                 
                 doc.excluded_llm_metadata_keys = [] # Let the LLM see everything else (date, topic)
                 doc.excluded_embed_metadata_keys = ["file_name", "source_file"] # Don't waste vector space on filename

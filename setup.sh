@@ -26,6 +26,7 @@ pip install streamlit python-pptx python-dotenv
 echo "✅ Environment is ready!"
 echo "------------------------------------------------"
 echo "Next Steps:"
+echo "0. source venv/bin/activate" 
 echo "1. export OPENAI_API_KEY='your_key'"
 echo "2. python3 ingest.py [folder_path]"
 echo "3. streamlit run app.py"
