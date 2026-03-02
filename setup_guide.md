@@ -37,7 +37,7 @@ Now, download the project files to your computer:
 
 ```bash
 git clone https://github.com/TXST-CS-CRL/boko-buddy
-cd YOUR_REPO_NAME
+cd boko-buddy
 
 ```
 
