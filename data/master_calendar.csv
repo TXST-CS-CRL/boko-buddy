@@ -1,0 +1,35 @@
+﻿primary_file,source,lecture_id,lab_id,tutorial_id,date,topic,book,,notes
+lec0.pptx,lecture,0,,,"Thursday, January 22, 2026",Syllabus and Introduction,,,"Quiz 0 due Fri, Jan 23"
+project_description.pdf,lab,,4,,"Thursday, January 22, 2026",Term project discussion,,,
+lec1.1.pptx,lecture,1.1,,,"Thursday, January 29, 2026",Big Ideas in Computer Architecture,P&H 1,,"Quiz 1 due Fri, Jan 30"
+lec1.2.pptx,lecture,1.2,,,"Thursday, January 29, 2026",Performance Engineering,,,HW 0 out
+chapter_01.pdf,textbook,,,,,"Abstraction Layers, Performance, Power Wall",,,
+linux.md,tutorial,,,0,"Thursday, January 29, 2026",Tutorial: Linux and Server Access Set-up,,,
+hw0.pdf,lab,,0,,"Thursday, January 29, 2026",HW0,,,
+lec2.pptx,lecture,2,,,"Thursday, February 5, 2026",ISA I: Introduction,"P&H 2.1-2.3, 2.6-2.7",,"Quiz 2 due Fri, Feb 6"
+chapter_02.pdf,textbook,,,,,"Number Representation, Logical Operations, Instruction Classes, Program Translation, Memory Layout ",,,
+perf.md,tutorial,,,1,"Thursday, February 5, 2026",Tutorial: perf,,,
+lec3.pptx,lecture,3,,,"Thursday, February 12, 2026",ISA II: Design Principles,"P&H 2.5 2.8,2.10,2.12-2.13, 2.22-2.23",,"Quiz 3 due Fri, Feb 13"
+mem_layout.cpp,code,3,,,"Thursday, February 12, 2026",Memory Layout Exercise,,,"HW 0 due, Fri, Feb 13"
+hw1.pdf,lab,,1,,"Thursday, February 12, 2026",HW1,,,HW1 out
+lec4.pptx,lecture,4,,,"Thursday, February 19, 2026",Computer Arithmetic: Fixed Point,"P&H 3.1-3.2, 3.5",,"Quiz 4 due Fri, Feb 20"
+chapter_03.pdf,textbook,,,,,"fixed point arithmetic, floating point arithmetic",,,
+lec5.pptx,lecture,5,,,"Thursday, February 19, 2026",Computer Arithmetic: Floating Point,,,
+lec6.pptx,lecture,6,,,"Thursday, February 26, 2026",The Processor,P&H 4.1-4.5,,"Quiz 5 due Fri, Feb 27"
+chapter_04.pdf,textbook,,,,,"Processor, datapath, pipelining, hazards ",,,
+hw2.pdf,lecture,,2,,"Thursday, February 26, 2026",HW2,,,"HW1 due, Fri Feb 27, HW2 out"
+lec7.pptx,lecture,7,,,"Thursday, March 5, 2026",Pipelining I: Introduction ,P&H 4.6,,"Quiz 6 due Fri, Mar 6"
+midterm_review.pptx,lecture,,,,"Thursday, March 5, 2026",Midterm Review,,,"Project proposals due Fri, Mar 6"
+NO_FILE_0,N/A,,,,"Thursday, March 12, 2026",Midterm,,,
+NO_FILE_1,N/A,--,,,"Thursday, March 19, 2026",Spring Break No Class,,,No Quiz
+lec8.pptx,lecture,8,,,"Thursday, March 26, 2026",Pipelining II: Hazards,P&H 4.7-4.9,,"Quiz 7 due Fri, Mar 27"
+hw3.pdf,lab,,3,,"Thursday, March 26, 2026",HW3,,,"HW2 due, HW 3 out"
+lec9.pptx,lecture,9,,,"Thursday, April 2, 2026",Memory Hierarchy I: Caches,"P&H 5.1-5.4, 5.14-5.15",,"Quiz 8 due Fri, Apr 3"
+chapter_05.pdf,textbook,,,,,"Memory technology, caches, virtual memory ",,,
+lec10.pptx,lecture,10,,,"Thursday, April 9, 2026",Memory Hierarchy II: Virtual Memory,P&H 5.7,,"Quiz 9 due Fri, Apr 10"
+lec11.pptx,lecture,11,,,"Thursday, April 16, 2026",Parallel Architectures I,"P&H 4.11, 4.13, 6.3-6.4",,"Quiz 10 due Fri, Apr 17"
+lec12.pptx,lecture,12,,,"Thursday, April 23, 2026",Parallel Architectures II,P&H 6.5-6.8,,"Quiz 11 due Fri, Apr 24"
+chapter_06.pdf,textbook,,,,,"vector processors, hardware multithreading, multicore ",,,
+NO_FILE_2,N/A,,,,"Thursday, April 23, 2026",Project Presentations Day I,,,
+NO_FILE_3,N/A,,,,"Thursday, April 30, 2026",Project Presentations Day II,,,
+NO_FILE_4,N/A,,,,"Thursday, May 7, 2026",Final Exam,,,"Time: 8:00 PM – 10:30 PM, Project reports due Friday, May 8, 11:59 PM "
